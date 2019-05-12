@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.container{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slider{
+  width: 80%;
+  position: relative;
+}
+
+.slider img{
+  width: 100%;
+  display: none;
+}
+
+.slider img.visible{
+  display: block;
+}
+
+.prev, .next{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  /*inserisce la manina*/
+  cursor: pointer;
+}
+
+.prev{
+  left:0;
+}
+
+.next{
+  right: 0;
+}
